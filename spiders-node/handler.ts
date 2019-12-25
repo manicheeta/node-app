@@ -21,3 +21,4 @@ export const test: APIGatewayProxyHandler = async (event, _context) => {
     }, null, 2),
   };
 }
+

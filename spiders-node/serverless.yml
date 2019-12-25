@@ -28,7 +28,7 @@ functions:
     events:
       - http:
           method: get
-  test:
+  bye:
     handler: src/bye.test
     events:
       - http:
@@ -40,3 +40,15 @@ functions:
       - http:
           method: get
           path: hello      
+  players:
+    handler: src/players.message
+    events:
+      - http:
+          method: get
+          path: hello 
+  teams:
+    handler: src/teams.message
+    events:
+      - http:
+          method: get
+          path: hello 
