@@ -40,15 +40,27 @@ functions:
       - http:
           method: get
           path: hello      
-  players:
-    handler: src/players.message
+  getPlayersInfo:
+    handler: src/players/players.playerindex
     events:
       - http:
           method: get
           path: hello 
+  getTeamInfo:
+    handler: src/teams/teams.index
+    events:
+      - http:
+          method: get
+          path: hello 
+  city:
+    handler: src/city.mycity
+    events:
+      - http:
+          method: get
+          path: hello
   teams:
-    handler: src/teams.message
+    handler: src/teams/teams.index
     events:
       - http:
           method: get
-          path: hello 
+          path: teams
