@@ -64,3 +64,9 @@ functions:
       - http:
           method: get
           path: teams
+  schedule:
+    handler: src/schedule/schedule.index
+    events:
+      - http:
+          method: get
+          path: schedule
