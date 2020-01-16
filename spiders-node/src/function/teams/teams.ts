@@ -1,5 +1,5 @@
 
-import { TeamsController } from "../controller/team-controller";
+import { TeamsController } from "../../controller/team-controller";
 
 export const index: any = async (event, _context) => {
   console.log(event);

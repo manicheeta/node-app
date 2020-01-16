@@ -1,4 +1,4 @@
-import { ScheduleController } from "../SchdController/schedule-controller";
+import { ScheduleController } from "../../controller/schedule-controller";
 
 export const index: any = async (event, _context) => {
     console.log(event);
@@ -10,10 +10,11 @@ export const index: any = async (event, _context) => {
         statusCode: 200,
         body: JSON.stringify({
             message: matchInfo.matchSchd,
-             //teams: teamCtl.teams,
-            // id: teamCtl.id,
+            
 
 
         }, null, 2),
     };
 }
+ //teams: teamCtl.teams,
+            // id: teamCtl.id,
