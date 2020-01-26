@@ -1,16 +1,16 @@
-import { resolve } from "dns";
+// import { resolve } from "dns";
 
 
-const sls = require('serverless-http');
-const express = require('express');
+// const sls = require('serverless-http');
+// const express = require('express');
 
-const app = express();
+// const app = express();
 
-app.get('/', (req, res) =>)
+// app.get('/', (req, res) =>)
 
-res.send('test');
+// res.send('test');
 
-});
+// });
 
 
 

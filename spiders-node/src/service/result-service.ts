@@ -1,6 +1,5 @@
 export class ResultService {
-    
-    results: {
+    result = {
         leagueType: 'T35',
         leagueYear: 2020,
         division: "A",
@@ -27,10 +26,13 @@ export class ResultService {
                 winningTeam: "Pacers",
             }
         ]
-        getResult(): any{
-    return this.matches.matchNumber;
+    }
+    getResult() {
+        return this.result
+    }
+
 
 
 }
 
-}
+

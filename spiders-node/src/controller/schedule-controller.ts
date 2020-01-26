@@ -5,6 +5,3 @@ export class ScheduleController {
     matchSchd = this.sch.getMatchscheule()
 
 }
- // score = this.ser.score;
-    // id = this.ser.id;
-    // id = 786;

@@ -23,56 +23,57 @@ provider:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 
 functions:
-  hello:
-    handler: handler.hello
+  # hello:
+  #   handler: handler.hello
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: hello
+  # bye:
+  #   handler: src/function/bye.test
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: bye
+  # msg:
+  #   handler: src/function/msg.message
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: msg      
+  # getPlayersInfo:
+  #   handler: src/function/players/players.playerindex
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: getPlayersInfo 
+  # getTeamInfo:
+  #   handler: src/function/teams/teams.index
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: getTeamInfo 
+  # city:
+  #   handler: src/function/city.mycity
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: city
+  # teams:
+  #   handler: src/function/teams/teams.index
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: teams
+  # schedule:
+  #   handler: src/function/schedule/schedule.index
+  #   events:
+  #     - http:
+  #         method: get
+  #         path: schedule
+   results:
+    handler: src/function/results.index
     events:
       - http:
           method: get
-  bye:
-    handler: src/function/bye.test
-    events:
-      - http:
-          method: get
-          path: hello
-  msg:
-    handler: src/function/msg.message
-    events:
-      - http:
-          method: get
-          path: hello      
-  getPlayersInfo:
-    handler: src/function/players/players.playerindex
-    events:
-      - http:
-          method: get
-          path: hello 
-  getTeamInfo:
-    handler: src/function/teams/teams.index
-    events:
-      - http:
-          method: get
-          path: hello 
-  city:
-    handler: src/function/city.mycity
-    events:
-      - http:
-          method: get
-          path: hello
-  teams:
-    handler: src/function/teams/teams.index
-    events:
-      - http:
-          method: get
-          path: teams
-  schedule:
-    handler: src/function/schedule/schedule.index
-    events:
-      - http:
-          method: get
-          path: schedule
-   result:
-    handler: src/function/result/result.index
-    events:
-      - http:
-          method: get
-          path: result       
+          path: results       
